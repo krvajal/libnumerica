@@ -10,6 +10,13 @@ namespace numerica
         class Bisection
         {
         public:
+            /**
+             *
+             * @param x_low
+             * @param x_upper
+             * @param TOL
+             * @param nEvals
+             */
             Bisection(const double x_low,const double x_upper, double TOL=1e-5,int nEvals=40)
                 :x_low(x_low),x_upper(x_upper),TOL(TOL),nEvals(nEvals){}
             template<typename Function>
