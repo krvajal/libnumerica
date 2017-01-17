@@ -8,7 +8,7 @@ libnumerica
 Build status (on Travis CI) [![Build Status](https://travis-ci.org/krvajalmiguelangel/libnumerica.svg?branch=master)](https://travis-ci.org/krvajalmiguelangel/libnumerica)
 ## What is this
 Libnumerica is a numeric library written in C++. It includes implementations for the most common methods used in numerical computing. 
-We put our effort on clarity of the code and expressive implementation of the algorithms. 
+We put our effort on code clarity  and expressive in the implementation of the algorithms. 
 
 The complete range of subject areas covered by the library includes,
 * Quadrature
