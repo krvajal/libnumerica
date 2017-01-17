@@ -11,29 +11,33 @@ ostream &tools::operator<<(ostream &out, const NVector &v) {
     return out;
 }
 
-bool tools::operator==(const NVector &a, const NVector &b) {
+
+bool equals(const tools::NVector &a, const tools::NVector &b) {
     if (a.size() != b.size()) return false;
     for (size_t i = 0; i < a.size(); i++)
         if (a[i] != b[i]) return false;
     return true;
+
 }
+
+bool tools::operator==(const NVector &a, const NVector &b) {
+
+    return equals(a, b);
+}
+
 
 bool tools::operator!=(const NVector &a, const NVector &b) {
-    if (a.size() != b.size()) return true;
-    valarray<bool> res = a != b;
-    auto val = true;
-    for (auto &e : res) {
-        val &= e;
-    }
-    return val;
+
+
+    return !equals(a, b);
 }
 
-NVector tools::operator*(const NVector &lhs, int rhs) {
+tools::NVector tools::operator*(const NVector &lhs, int rhs) {
 
     NVector res = lhs;
 
     for (auto &item:res) {
-        res *= rhs;
+        item *= rhs;
     }
     return res;
 }
