@@ -44,10 +44,9 @@ TEST_CASE("Base tools", "[tools]") {
         }
 
     }
-    SECTION("vector operations") {
+    SECTION("vector operations","[nvector]") {
 
         NVector v1 = linspace(0, 10, 10);
-
         NVector sum;
         NVector prod;
         WHEN("sum two vectors ") {
