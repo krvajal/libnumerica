@@ -27,4 +27,6 @@ A sample project using CMake is included that shows a typical configuration to u
 * Yuriel Nuñez [yurielnf@gmail.com](mailto:yurielnf@gmail.com)
 
 ## More
+Join our online chat at [![Gitter](https://badges.gitter.im/gitterHQ/gitter.svg)](https://gitter.im/libnumerica/Lobby)
+
 Issues and bugs can be raised on the [Issue tracker on GitHub](https://github.com/krvajalmiguelangel/libnumerica/issues)
