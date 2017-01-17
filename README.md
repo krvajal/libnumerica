@@ -24,7 +24,7 @@ In order to use it you must link your project with the libnumerica static librar
 A sample project using CMake is included that shows a typical configuration to use the library.
 ## Authors
 * Daniel Miravet [dmiravet@gmail.com](mailto:dmiravet@gmail.com)
-* Yuriel Nuñes [yurielnf@gmail.com](mailto:yurielnf@gmail.com)
+* Yuriel Nuñez [yurielnf@gmail.com](mailto:yurielnf@gmail.com)
 
 ## More
 Issues and bugs can be raised on the [Issue tracker on GitHub](https://github.com/krvajalmiguelangel/libnumerica/issues)
