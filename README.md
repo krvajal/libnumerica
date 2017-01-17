@@ -11,7 +11,7 @@ Libnumerica is a numeric library written in C++. It includes implementations for
 We put our effort on code clarity  and expressive in the implementation of the algorithms. 
 
 The complete range of subject areas covered by the library includes,
-* Quadrature
+* [Quadrature](https://github.com/krvajalmiguelangel/libnumerica/blob/master/docs/quadrature.md)
 * Root Finding
 * Linear Algebra
 * Interpolation
