@@ -10,7 +10,7 @@ Build status (on Travis CI) [![Build Status](https://travis-ci.org/krvajalmiguel
 Libnumerica is a numeric library written in C++. It includes implementations for the most commond methods used in numerical computing. 
 We put our effort on clarity of the code and expressive implementation of the algorithms. 
 ## How to use it
-In order to use it you must link your project with the libnumerica static library and and the headers to your include path so they can be visibles to your source code.
+In order to use it you must link your project with the libnumerica static library and make  the headers accesibles in your include path so they can be visibles by your source code.
 A sample project using CMake is included that shows a typical configuration to use the library.
 
 ## More
