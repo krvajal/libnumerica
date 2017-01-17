@@ -15,7 +15,7 @@ The complete range of subject areas covered by the library includes,
 * Root Finding
 * Linear Algebra
 * Interpolation
-* ODEs
+* [ODEs](https://github.com/krvajalmiguelangel/libnumerica/blob/master/docs/odes.md)
 * Least Square Fitting
 * FFT
 
