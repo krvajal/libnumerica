@@ -17,6 +17,16 @@ set(SOURCE_FILES
         tools/nvector.cpp
         tools/nvector.h
         tools/tools.h
+        tools/utils.cpp
+        tools/exceptions/InvalidArgumentException.cpp
+        tools/exceptions/InvalidArgumentException.h
+        tools/utils.hpp
+        integration/integration.h
+        integration/simpson.cpp
+        integration/trapezoidal.cpp
+        integration/trapezoidal.h
+        integration/simpson.h
         numerica.h)
+include_directories(..)
 
-add_library(numerica SHARED ${SOURCE_FILES})
+add_library(libnumerica SHARED ${SOURCE_FILES})

@@ -22,7 +22,7 @@ TEST_CASE("Root finding","[roots]"){
 
     SECTION("BRENT"){
         REQUIRE(brent.DoIt(f) == Approx(0.5149).epsilon(0.01) );
-        REQUIRE(brent.DoIt(fnewton) == Approx(1.0002));
+        CHECK_THROWS(brent.DoIt(fnewton));
     }
     SECTION("SECANT"){
         numerica::roots::Secant secant{0.5,3.54,1e-5,100};
