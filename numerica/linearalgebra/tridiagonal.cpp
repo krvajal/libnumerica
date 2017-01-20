@@ -3,7 +3,7 @@
 using namespace numerica;
 using tools::NVector;
 
-NVector linearAlgebra::SolveTridiagonal
+NVector la::SolveTridiagonal
         (const NVector& a,const NVector& b,const NVector& c, const NVector& d)
 {
     int n=a.size();

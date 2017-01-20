@@ -3,37 +3,38 @@
 
 #include "../tools/nmatrix.h"
 
-namespace numerica
-{
-    namespace linearAlgebra
-    {
+namespace numerica {
+    namespace la {
         using tools::NVector;
         using tools::Matrix;
 
-        NVector Solve(const Matrix& A,const NVector& b);
-        double Determinant(const Matrix& A);
-        Matrix Inverse(const Matrix& A);
-        NVector BackwareSustitution(const Matrix& A,int column=0);
+        NVector Solve(const Matrix &A, const NVector &b);
+
+        double Determinant(const Matrix &A);
+
+        Matrix Inverse(const Matrix &A);
+
+        NVector BackwareSustitution(const Matrix &A, int column = 0);
 
 
         template<class PivotingStrategy>
-        class GaussianEliminator
-        {
+        class GaussianEliminator {
         public:
-            GaussianEliminator(Matrix& A):A(A),nPermutations(0){}
+            GaussianEliminator(Matrix &A) : A(A), nPermutations(0) {}
+
             bool DoIt();
 
             int nPermutations;
         private:
-            Matrix& A;
+            Matrix &A;
 
         };
 
 
-        class PartialScaledStrategy
-        {
+        class PartialScaledStrategy {
         public:
-            PartialScaledStrategy(Matrix& A);
+            PartialScaledStrategy(Matrix &A);
+
             bool SelectPivote(int column);
 
             int nPermutations;
@@ -48,25 +49,20 @@ namespace numerica
 
 //Definitions
 
-namespace numerica
-{
-    namespace linearAlgebra
-    {
+namespace numerica {
+    namespace la {
         template<class PivotingStrategy>
-        bool GaussianEliminator<PivotingStrategy>::DoIt()
-        {
+        bool GaussianEliminator<PivotingStrategy>::DoIt() {
             PivotingStrategy strategy(A);
-            for(int i=0;i<A.size()-1;i++)
-            {
+            for (int i = 0; i < A.size() - 1; i++) {
                 if (!strategy.SelectPivote(i)) return false;
-                for (size_t j=i+1;j<A.size();j++)
-                {
-                    double m=A[j][i]/A[i][i];
-                    A[j]-=m*A[i];
+                for (size_t j = i + 1; j < A.size(); j++) {
+                    double m = A[j][i] / A[i][i];
+                    A[j] -= m * A[i];
                 }
             }
-            nPermutations=strategy.nPermutations;
-            return (A[A.size()-1][A.size()-1]!=0);
+            nPermutations = strategy.nPermutations;
+            return (A[A.size() - 1][A.size() - 1] != 0);
         }
     }
 }
