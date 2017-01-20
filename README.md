@@ -22,7 +22,7 @@ The complete range of subject areas covered by the library includes,
 * [Quadrature](https://github.com/krvajalmiguelangel/libnumerica/blob/master/docs/quadrature.md)
 * Root Finding
 * [Linear Algebra](https://github.com/krvajalmiguelangel/libnumerica/blob/master/docs/linearalgebra.md)
-* Interpolation
+* [Interpolation](https://github.com/krvajalmiguelangel/libnumerica/blob/master/docs/interpolation.md)
 * [ODEs](https://github.com/krvajalmiguelangel/libnumerica/blob/master/docs/odes.md)
 * Least Square Fitting
 * FFT
