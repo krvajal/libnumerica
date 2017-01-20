@@ -1,4 +1,4 @@
-ummary
+Summary
 [Summarize the issue - what, where, how?]
 
 -------
