@@ -68,7 +68,7 @@ void TestMuller()
 {
     cout<<"Muller"<<endl;
     cout<<"example 3 section 2.6 Burden and Faires"<<endl;
-    Muller x=Muller(2.5,2.0,2.25,1e-5,50);
+    Muller x= Muller(2.5,2.0,2.25,1e-5,50);
     cout<<x.DoIt(myfunction)<<endl<<endl;;
 
 }
