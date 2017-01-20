@@ -5,6 +5,7 @@ The underline data type for the elements of the vectors and matrices is `double`
 
 ## Vector operations
   The supported mathemaical operations in vector are:
+  
     *Vector sum
    
 
